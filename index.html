@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Task Kryvoruchko HTML-dev</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@700;800&family=Rubik:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body class="bg-bg-primary text-light-primary font-rubik font-regular text-base">
+    <main>
+      <div>
+        <nav class="hidden md:block py-[18px] leading-none">
+          <div class="container">
+            <div class="flex items-center justify-between font-semibold">
+              <div class="flex items-center gap-2">
+                <a href="#!" class="bg-light-primary bg-opacity-20 px-8 py-2 text-[22px]">Logotype</a>
+                <button
+                  class="hidden xl:flex items-center gap-2.5 p-4 ml-3 text-accent bg-light-primary bg-opacity-5"
+                >
+                  Slots
+                  <img src="./images/icons/arrow-down.svg" alt="arrow down icon" />
+                </button>
+                <button
+                  class="hidden xl:flex items-center gap-2.5 p-4 text-accent bg-light-primary bg-opacity-5 text-nowrap"
+                >
+                  Live Dealers
+                  <img src="./images/icons/arrow-down.svg" alt="arrow down icon" />
+                </button>
+                <button class="2xl:hidden p-3.5">
+                  <img src="./images/icons/burger.svg" alt="burger menu" />
+                </button>
+                <ul class="hidden 2xl:flex items-center">
+                  <li><a href="#!" class="p-3">Promos</a></li>
+                  <li><a href="#!" class="p-3">Tournaments</a></li>
+                  <li><a href="#!" class="p-3">Achievements</a></li>
+                  <li><a href="#!" class="p-3">Shop</a></li>
+                  <li><a href="#!" class="p-3">VIP</a></li>
+                </ul>
+              </div>
+
+              <div class="flex items-center gap-5">
+                <button class="hidden xl:block py-3">
+                  <img src="./images/icons/uk.svg" alt="english language choose btn" />
+                </button>
+                <div class="search-input-wrapper relative">
+                  <label>
+                    <input
+                      class="search_input font-rubik font-regular bg-bg-input bg-opacity-25 border-light-primary border-opacity-15 border-[3px] py-3 pl-10 pr-3"
+                      type="search"
+                      placeholder="Search"
+                    />
+                  </label>
+                </div>
+                <div
+                  class="nav__user-info relative flex items-center mx-3 border border-light-primary border-opacity-15"
+                  role="button"
+                >
+                  <img class="absolute z-10 -left-3" src="./images/icons/avatar.svg" alt="avatar" />
+                  <div class="flex flex-col border-r border-light-primary border-opacity-15">
+                    <span
+                      class="nav__level relative bg-bg-secondary font-rubik font-regular text-xs pl-20 py-0.5"
+                      ><strong>5</strong> Level</span
+                    >
+                    <span
+                      class="text-sm text-nowrap pl-16 pr-2 py-[3px] border-t border-light-primary border-opacity-15"
+                      ><strong>€ 1,250.65</strong></span
+                    >
+                  </div>
+                  <div class="">
+                    <img class="px-2" src="./images/icons/arrow-down.svg" alt="arrow down" />
+                  </div>
+                </div>
+                <!-- <a class="sign-btn px-[24px] py-[15px] text-center" href="#!" role="button">Sign In</a> -->
+                <a
+                  class="orange-btn hidden xl:block px-[29px] py-[15px] font-sofia text-nowrap text-center text-sm"
+                  href="#!"
+                  role="button"
+                  >Deposit</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="mobile md:hidden pt-2.5">
+          <div class="flex items-center justify-between">
+            <img class="relative z-10 -mr-2 h-6" src="./images/icons/chain-left.svg" alt="logo decor chain" />
+            <div
+              class="mobile__logo-wrapper relative bg-bg-secondary flex-grow text-center border border-light-primary border-opacity-15"
+            >
+              <a
+                class="mobile__logo-link relative font-rubik font-semi-bold py-3 px-5 block text-[26px] leading-none"
+                href="#!"
+                >Logotype</a
+              >
+            </div>
+            <img
+              class="relative z-10 -ml-2 h-6"
+              src="./images/icons/chain-right.svg"
+              alt="logo decor chain"
+            />
+          </div>
+
+          <div class="mobile__menu bg-bg-primary font-sofia text-xs font-bold leading-none">
+            <div class="flex justify-between items-stretch py-2">
+              <div class="basis-1/4">
+                <img
+                  class="mobile__menu-avatar absolute -top-[20px] h-20 z-30"
+                  src="./images/icons/avatar.svg"
+                  alt="avatar"
+                />
+              </div>
+              <button
+                class="relative basis-1/4 flex flex-col items-center justify-end border-l border-r border-light-primary border-opacity-15"
+              >
+                <span class="mobile__dep text-xs font-rubik font-semi-bold leading-none">€ 12,250.65</span>
+                <img
+                  class="mobile__menu-coin w-[35px] h-[35px]"
+                  src="./images/icons/coin.svg"
+                  alt="coin icon"
+                /><span>Deposit</span>
+              </button>
+              <button
+                class="basis-1/4 flex flex-col items-center justify-end gap-2 pt-2.5 border-r border-light-primary border-opacity-15"
+              >
+                <img class="w-[22px]" src="./images/icons/search.svg" alt="coin icon" /><span>Search</span>
+              </button>
+              <button class="basis-1/4 flex flex-col items-center justify-end gap-3 pt-2.5">
+                <img class="w-[20px]" src="./images/icons/burger.svg" alt="burger menu" /><span>Menu</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="py-6 md:py-8 xl:py-16">
+        <div class="container">
+          <div class="flex xl:justify-center items-start gap-[72px] max-w-[1510px] mx-auto">
+            <aside class="aside relative hidden xl:block bg-bg-secondary mb-10">
+              <nav class="aside__nav relative">
+                <ul
+                  class="font-semi-bold leading-1.3 w-[230px] border border-light-primary border-opacity-15"
+                >
+                  <li class="border-b border-light-primary border-opacity-15">
+                    <a class="aside__link aside__link--active block py-2.5 px-4" href="#!" data-target="terms"
+                      >Terms and Conditions</a
+                    >
+                  </li>
+                  <li class="border-b border-light-primary border-opacity-15">
+                    <a class="aside__link block py-2.5 px-4" href="#!" data-target="privacy"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li class="border-b border-light-primary border-opacity-15">
+                    <a class="aside__link block py-2.5 px-4" href="#!" data-target="responsible"
+                      >Responsible Gaming</a
+                    >
+                  </li>
+                  <li class="border-b border-light-primary border-opacity-15">
+                    <a class="aside__link block py-2.5 px-4" href="#!" data-target="bonus">Bonus Terms</a>
+                  </li>
+                  <li class="">
+                    <a class="aside__link block py-2.5 px-4" href="#!" data-target="contact">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+
+            <div class="flex-grow md:mb-16">
+              <section class="info__section" id="terms">
+                <h2
+                  class="font-sofia text-[32px] lg:text-4xl xl:text-5xl font-extra-bold leading-1.2 tracking-tight mb-3 xl:mb-6"
+                >
+                  Terms and Conditions
+                </h2>
+                <ul class="leading-1.33 overflow-x-hidden">
+                  <li class="mb-6 xl:mb-9">
+                    <h3
+                      class="font-sofia text-xl xl:text-2xl font-extra-bold leading-1.2 tracking-tight capitalize text-muted mb-4"
+                    >
+                      Registration and Account
+                    </h3>
+                    <ul class="flex flex-col gap-2">
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title relative flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            General Rules
+                          </h4>
+                          <img
+                            class="rotate-45 w-6 h-6 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p class="mb-4">
+                            We've made registering at our casino as easy as possible so you don't have to go
+                            through any hassles and formalities. Registering takes only a few seconds and then
+                            you can start enjoying many bonuses and offers at.
+                          </p>
+                          <ol>
+                            <li
+                              class="flex items-baseline text-sm py-3 px-4 border-t border-light-primary border-opacity-15"
+                            >
+                              <span class="text-muted font-semi-bold text-base mr-4">1.1</span>
+                              <p>
+                                The first deposit <strong>bonus is 100% up to €200 + 70 Free Spins</strong>.
+                              </p>
+                            </li>
+                            <li
+                              class="flex items-baseline text-sm py-3 px-4 border-t border-light-primary border-opacity-15"
+                            >
+                              <span class="text-muted font-semi-bold text-base mr-4">1.2</span>
+                              <p>
+                                To receive a <strong>100% bonus</strong> on the first deposit, players must
+                                deposit at least <strong>€20</strong>.
+                              </p>
+                            </li>
+                            <li
+                              class="flex items-baseline text-sm py-3 px-4 border-t border-light-primary border-opacity-15"
+                            >
+                              <span class="text-muted font-semi-bold text-base mr-4">1.3</span>
+                              <p>
+                                To receive a <strong>100% bonus and 70 Free Spins</strong> on the first
+                                deposit, players need to make a <strong>deposit of €50 or more</strong>.
+                              </p>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            Create an Account
+                          </h4>
+                          <img
+                            class="rotate-45 w-6 h-6 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem
+                            voluptate exercitationem totam quis sit quidem, enim facere nam dolores, cumque
+                            odit ex sint doloremque. Voluptas sequi quaerat eius reiciendis!
+                          </p>
+                        </div>
+                      </li>
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            Service Account Management
+                          </h4>
+                          <img
+                            class="rotate-45 w-6 h-6 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem
+                            voluptate exercitationem totam quis sit quidem, enim facere nam dolores, cumque
+                            odit ex sint doloremque. Voluptas sequi quaerat eius reiciendis!
+                          </p>
+                        </div>
+                      </li>
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            Responsible Gaming
+                          </h4>
+                          <img
+                            class="rotate-45 w-6 h-6 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem
+                            voluptate exercitationem totam quis sit quidem, enim facere nam dolores, cumque
+                            odit ex sint doloremque. Voluptas sequi quaerat eius reiciendis!
+                          </p>
+                        </div>
+                      </li>
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            Active and Inactive Accounts
+                          </h4>
+                          <img
+                            class="rotate-45 w-6 h-6 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem
+                            voluptate exercitationem totam quis sit quidem, enim facere nam dolores, cumque
+                            odit ex sint doloremque. Voluptas sequi quaerat eius reiciendis!
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="mb-6 xl:mb-9">
+                    <h3
+                      class="font-sofia text-xl xl:text-2xl leading-1.2 tracking-tight text-muted capitalize mb-4"
+                    >
+                      Service Policies
+                    </h3>
+                    <ul class="flex flex-col gap-2">
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            Chargeback
+                          </h4>
+                          <img
+                            class="rotate-45 w-6 h-6 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem
+                            voluptate exercitationem totam quis sit quidem, enim facere nam dolores, cumque
+                            odit ex sint doloremque. Voluptas sequi quaerat eius reiciendis!
+                          </p>
+                        </div>
+                      </li>
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            Close an Account
+                          </h4>
+                          <img
+                            class="rotate-45 w-6 h-6 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem
+                            voluptate exercitationem totam quis sit quidem, enim facere nam dolores, cumque
+                            odit ex sint doloremque. Voluptas sequi quaerat eius reiciendis!
+                          </p>
+                        </div>
+                      </li>
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            Deposit Rules
+                          </h4>
+                          <img
+                            class="rotate-45 w-6 h-6 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem
+                            voluptate exercitationem totam quis sit quidem, enim facere nam dolores, cumque
+                            odit ex sint doloremque. Voluptas sequi quaerat eius reiciendis!
+                          </p>
+                        </div>
+                      </li>
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            Withdrawal Policy
+                          </h4>
+                          <img
+                            class="rotate-45 w-6 h-6 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem
+                            voluptate exercitationem totam quis sit quidem, enim facere nam dolores, cumque
+                            odit ex sint doloremque. Voluptas sequi quaerat eius reiciendis!
+                          </p>
+                        </div>
+                      </li>
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            Refund Policy
+                          </h4>
+                          <img
+                            class="rotate-45 w-6 h-6 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem
+                            voluptate exercitationem totam quis sit quidem, enim facere nam dolores, cumque
+                            odit ex sint doloremque. Voluptas sequi quaerat eius reiciendis!
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="mb-6 xl:mb-9">
+                    <h3
+                      class="font-sofia text-xl xl:text-2xl leading-1.2 tracking-tight capitalize text-muted mb-4"
+                    >
+                      Deposits & Withdrawals
+                    </h3>
+                    <ul class="flex flex-col gap-2">
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            Anti-Money Laundering Policy
+                          </h4>
+                          <img
+                            class="rotate-45 w-6 h-6 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem
+                            voluptate exercitationem totam quis sit quidem, enim facere nam dolores, cumque
+                            odit ex sint doloremque. Voluptas sequi quaerat eius reiciendis!
+                          </p>
+                        </div>
+                      </li>
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            Disclaimer of Liabilities
+                          </h4>
+                          <img
+                            class="rotate-45 w-6 h-6 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem
+                            voluptate exercitationem totam quis sit quidem, enim facere nam dolores, cumque
+                            odit ex sint doloremque. Voluptas sequi quaerat eius reiciendis!
+                          </p>
+                        </div>
+                      </li>
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            Collusion, Cheating, Fraud and Criminal Activity
+                          </h4>
+                          <img
+                            class="rotate-45 w-6 h-6 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem
+                            voluptate exercitationem totam quis sit quidem, enim facere nam dolores, cumque
+                            odit ex sint doloremque. Voluptas sequi quaerat eius reiciendis!
+                          </p>
+                        </div>
+                      </li>
+                      <li
+                        class="terms__item relative bg-bg-secondary border border-light-primary border-opacity-15"
+                      >
+                        <div
+                          class="accordeon__title flex items-center justify-between gap-5 p-4 xl:p-5 pr-4"
+                          role="button"
+                        >
+                          <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize">
+                            Closure of the account termination of the terms of use closure and termination by
+                            you
+                          </h4>
+                          <img
+                            class="w-6 h-6 rotate-45 transition-transform duration-100"
+                            src="./images/icons/accordeon-icon.svg"
+                            alt="show more icon"
+                          />
+                        </div>
+                        <div
+                          class="accordeon__info pl-5 pr-4 pb-5 hidden transition-[max-height] duration-100 overflow-hidden max-h-0"
+                        >
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem
+                            voluptate exercitationem totam quis sit quidem, enim facere nam dolores, cumque
+                            odit ex sint doloremque. Voluptas sequi quaerat eius reiciendis!
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="info__section hidden" id="privacy">
+                <h2
+                  class="font-sofia text-[32px] lg:text-4xl xl:text-5xl font-extra-bold leading-1.2 tracking-tight mb-3 xl:mb-6"
+                >
+                  Privacy Policy
+                </h2>
+                <p class="mb-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolorum consectetur obcaecati
+                  quam asperiores consequatur, doloribus animi deserunt voluptas voluptatem illo ex
+                  doloremque. Eos commodi sint sequi obcaecati eum ducimus veniam delectus similique?
+                  Temporibus quasi nihil alias, beatae repudiandae doloremque iste atque tenetur ipsum fuga
+                  enim nobis, blanditiis, incidunt adipisci. Quidem beatae, deserunt alias unde qui non neque
+                  nulla corporis provident quisquam. Quasi at officia ut quam aliquam voluptate quod
+                  doloremque totam aperiam, cum praesentium quidem? Quam provident hic molestiae reprehenderit
+                  alias! Maiores, quae ab. Cupiditate nobis quam pariatur voluptas animi tempora excepturi
+                  explicabo fuga perferendis, unde asperiores velit illo? Atque omnis ad aliquid? Commodi
+                  eligendi minima eos corrupti, officiis dolore officia alias totam quaerat sapiente animi
+                  odit, facere impedit quod voluptatibus ea possimus facilis distinctio mollitia? Mollitia,
+                  molestias labore veritatis quo repellendus amet odio sint quos commodi excepturi perferendis
+                  quisquam consequuntur quas numquam minus asperiores aut nisi aliquam repellat deleniti
+                  dignissimos aspernatur omnis optio aliquid? Ex voluptatibus consequatur vero, error nulla a.
+                  Totam blanditiis exercitationem dolorem! Tempora deserunt ut corrupti ex voluptatum! Aliquam
+                  eum voluptas sequi molestiae ea et dicta, placeat, perferendis nesciunt vitae repellat quia
+                  fuga mollitia cumque totam. Odio fugiat delectus vero maxime sint deleniti ea quo.
+                </p>
+              </section>
+
+              <section class="info__section hidden" id="responsible">
+                <h2
+                  class="font-sofia text-[32px] lg:text-4xl xl:text-5xl font-extra-bold leading-1.2 tracking-tight mb-3 xl:mb-6"
+                >
+                  Responsible Gaming
+                </h2>
+                <p class="mb-9">
+                  We at Service believe that gambling should be fun and free of harm and only done for
+                  entertainment purposes. Before you start playing at Service, it is very important to
+                  understand that gambling should never be viewed as a source of any kind of income or recipe
+                  to pay off your debts. We strongly recommend you to keep track of how much time you spend
+                  playing casino games and how much money you can afford yourself to spend on them. Although
+                  recommendations stated above might seem obvious for some of you, there are still certain
+                  percentages of players who lose control over such things when playing. If you think you
+                  might be one of those players and gambling has negative impact on your life or life of your
+                  family and friends, we can suggest you one of the following things: You can always contact
+                  our support department at support@service.com and ask to terminate your Service account for
+                  a certain period of time. After that we will take necessary measures to completely block you
+                  from our site and block any promotional emails that you might have been receiving from our
+                  casino before. Please contact the customer support team if you want to set a personal
+                  cooling-off period. You can also seek for help from professionals who deal with gambling
+                  problems: Gamblers Anonymous, GamCare, Gambling Therapy.
+                </p>
+                <h4 class="font-sofia text-xl font-extra-bold leading-1.2 capitalize mb-4">
+                  Complaints Resolution Procedure
+                </h4>
+                <p class="bg-bg-secondary p-4 mb-6">
+                  You may contact our customer Support Service Team by email:
+                  <a class="text-accent" href="mailto:support@service.com">
+                    <strong>support@service.com.</strong>
+                  </a>
+                </p>
+              </section>
+
+              <section class="info__section hidden" id="bonus">
+                <h2
+                  class="font-sofia text-[32px] lg:text-4xl xl:text-5xl font-extra-bold leading-1.2 tracking-tight mb-3 xl:mb-6"
+                >
+                  Bonus Terms
+                </h2>
+                <p class="mb-6">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates vitae velit itaque
+                  aperiam, dolores dicta nobis odio doloribus rem fugit, recusandae ullam nemo magni? Est
+                  dolorem saepe possimus porro fugiat. Obcaecati officia voluptates enim maxime nam, eum amet
+                  doloribus libero, fuga tenetur est ratione nisi ullam tempora praesentium laudantium
+                  repellendus corporis rerum explicabo sunt soluta voluptatum commodi numquam. Incidunt
+                  repudiandae maiores facere ex aliquam exercitationem adipisci minus vitae ut tempore quasi
+                  labore earum assumenda, accusantium similique, explicabo amet velit officia optio at!
+                  Dolorem impedit excepturi porro sapiente accusantium nisi sunt tempore amet perferendis ad
+                  nobis ullam repellat, ducimus ea suscipit neque est tenetur eligendi debitis nemo quos
+                  praesentium. Reprehenderit, atque commodi quisquam, minus nisi cupiditate perferendis
+                  explicabo officia placeat voluptatibus inventore ex veniam aut laudantium similique delectus
+                  magni tenetur autem aliquid nemo? Accusamus, minus expedita! Odio cumque ipsam veniam magnam
+                  totam illo unde commodi, assumenda iusto adipisci pariatur eaque? Rem sapiente quia ullam
+                  blanditiis sunt id labore nobis dolorum est repudiandae? Dolorum distinctio molestiae
+                  exercitationem quos! Soluta inventore aut blanditiis, eius excepturi esse fugit vero
+                  consequuntur. Vitae error veritatis laudantium fuga quod. Itaque aliquam suscipit fugit eum
+                  voluptatem enim harum iure minima, cum culpa porro saepe at laudantium assumenda ut
+                  voluptatum tenetur perferendis, quasi quis molestias accusamus? Esse qui aut commodi
+                  exercitationem quisquam iusto magnam tempore deserunt quo aspernatur! Possimus voluptatum
+                  beatae laudantium assumenda, tempore recusandae odio, et repellendus dolorum ex distinctio
+                  reiciendis adipisci obcaecati! Quidem iusto nisi iure maiores nobis. Fugit iusto perferendis
+                  possimus harum, inventore commodi eius ratione?
+                </p>
+              </section>
+
+              <section class="info__section hidden" id="contact">
+                <h2
+                  class="font-sofia text-[32px] lg:text-4xl xl:text-5xl font-extra-bold leading-1.2 tracking-tight mb-3 xl:mb-6"
+                >
+                  Contact
+                </h2>
+                <p class="mb-6">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium sequi eveniet numquam
+                  nisi deserunt quas voluptatibus. Repellat enim sequi facilis adipisci culpa ab, minus
+                  consectetur, eos tenetur, at eveniet libero reprehenderit nobis vitae recusandae dicta quo
+                  illo optio soluta aspernatur. Consequatur nemo debitis assumenda dolorem animi incidunt,
+                  harum iure eius repellat tempora error in cum recusandae qui ipsam accusantium sit illum
+                  iusto maxime voluptates vitae aut ipsum magni quisquam. Deserunt ab ipsam modi tempore,
+                  eaque autem nesciunt, blanditiis laborum nihil expedita iste qui culpa velit magni assumenda
+                  et eligendi eos id harum, soluta molestias laboriosam corporis omnis excepturi. Earum,
+                  voluptate.
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="install relative bg-light-primary py-12 lg:py-16 mb-28">
+        <div class="container">
+          <div
+            class="install__content flex flex-col md:flex-row md:items-start lg:items-center justify-center gap-3 lg:gap-9 xl:gap-16 max-w-[1510px] w-full mx-auto font-sofia leading-1.2"
+          >
+            <img
+              class="md:w-[360px] lg:w-[480px] xl:w-[540px]"
+              src="./images/content/install-content-img.svg"
+              alt="our app"
+              loading="lazy"
+            />
+            <div class="md:max-w-[480px]">
+              <h3
+                class="text-bg-primary font-extra-bold text-2xl md:text-[32px] lg:text-4xl tracking-tight mb-6"
+              >
+                Install Our Service App
+              </h3>
+              <p class="font-rubik text-bg-dark mb-9 leading-1.33">
+                Your favorite games at your fingertips. One-second access to big bonuses and thrilling
+                tournaments. Fast withdrawals. Everything you love, only better.
+              </p>
+              <div
+                class="install__apps relative flex items-center justify-between py-3 px-4 md:px-6 mb-12 bg-bg-secondary"
+              >
+                <p class="text-light-primary font-extra-bold text-base md:text-xl xl:text-2xl">
+                  Install Our App on
+                </p>
+                <ul class="flex items-center gap-3">
+                  <li>
+                    <a href="#!"
+                      ><img class="w-10 xl:w-12" src="./images/buttons/apple.svg" alt="apple icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#!"
+                      ><img class="w-10 xl:w-12" src="./images/buttons/android.svg" alt="android icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#!"
+                      ><img class="w-10 xl:w-12" src="./images/buttons/windows.svg" alt="windows icon"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <p class="text-bg-primary text-xl mb-4">Compatable with:</p>
+              <ul class="w-full">
+                <li class="app-list relative text-muted py-3 px-10 border-bg-input border-b">iOS Safari</li>
+                <li class="app-list relative text-muted py-3 px-10 border-bg-input border-b">
+                  Android Chrome
+                </li>
+                <li class="app-list relative text-muted py-3 px-10 border-bg-input border-b">Mac Chrome</li>
+                <li class="app-list relative text-muted py-3 px-10 border-bg-input border-b">
+                  Windows Chrome
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-0 pb-16 md:pt-16 capitalize bg-violet-gradient">
+        <div class="container">
+          <div
+            class="flex flex-col md:flex-row items-center justify-center font-sofia mb-12 md:mb-14 2xl:mb-20"
+          >
+            <span class="md:mr-[24px] mb-4 md:mb-0 text-base xl:text-xl font-extra-bold leading-1.2"
+              >Select Language</span
+            >
+            <a
+              class="lang-btn px-6 py-3 flex w-full md:w-auto items-center justify-center gap-3 font-sofia text-nowrap"
+              href="#!"
+              role="button"
+            >
+              <img src="./images/icons/uk.svg" alt="english language" />
+              <span class="font-bold text-[14px] xl:text-[18px] leading-none">English</span></a
+            >
+          </div>
+          <ul
+            class="flex flex-wrap justify-between md:justify-start lg:justify-between xl:justify-around max-w-[1510px] mx-auto text-sm lg:text-base"
+          >
+            <li class="w-1/2 md:w-1/3 lg:w-1/5 mb-9">
+              <h4
+                class="font-sofia font-extra-bold text-xl xl:text-2xl leading-1.2 tracking-tight text-muted mb-6"
+              >
+                Slots
+              </h4>
+              <ul class="flex flex-col gap-3 md:gap-4 leading-1.33">
+                <li><a href="#!">Top</a></li>
+                <li><a href="#!">New</a></li>
+                <li><a href="#!">Popular</a></li>
+                <li><a href="#!">Slots</a></li>
+                <li><a href="#!">Roulette</a></li>
+                <li><a href="#!">Blackjack</a></li>
+              </ul>
+            </li>
+            <li class="w-1/2 md:w-1/3 lg:w-1/5 mb-9">
+              <h4
+                class="font-sofia font-extra-bold text-xl xl:text-2xl leading-1.2 tracking-tight text-muted mb-6"
+              >
+                Live Dealers
+              </h4>
+              <ul class="flex flex-col gap-3 md:gap-4 leading-1.33">
+                <li><a href="#!">Top</a></li>
+                <li><a href="#!">New</a></li>
+                <li><a href="#!">Popular</a></li>
+                <li><a href="#!">Roulette</a></li>
+                <li><a href="#!">Blackjack</a></li>
+                <li><a href="#!">Baccarat</a></li>
+                <li><a href="#!">Poker</a></li>
+              </ul>
+            </li>
+            <li class="w-1/2 md:w-1/3 lg:w-1/5 mb-9">
+              <h4
+                class="font-sofia font-extra-bold text-xl xl:text-2xl leading-1.2 tracking-tight text-muted mb-6"
+              >
+                Promos
+              </h4>
+              <ul class="flex flex-col gap-3 md:gap-4 leading-1.33">
+                <li><a href="#!">Promotions</a></li>
+                <li><a href="#!">Tournaments</a></li>
+                <li><a href="#!">Shop</a></li>
+                <li><a href="#!">Loyalty Club</a></li>
+                <li><a href="#!">Achievements</a></li>
+              </ul>
+            </li>
+            <li class="w-1/2 md:w-1/3 lg:w-1/5 mb-9">
+              <h4
+                class="font-sofia font-extra-bold text-xl xl:text-2xl leading-1.2 tracking-tight text-muted mb-6"
+              >
+                General Info
+              </h4>
+              <ul class="flex flex-col gap-3 md:gap-4 leading-1.33">
+                <li><a href="#!">About Us</a></li>
+                <li><a href="#!">FAQ</a></li>
+                <li><a href="#!">Bonus Terms</a></li>
+                <li><a href="#!">Affiliates</a></li>
+                <li><a href="#!">Contsct Us</a></li>
+              </ul>
+            </li>
+            <li class="w-1/2 md:w-1/3 lg:w-1/5">
+              <h4
+                class="font-sofia font-extra-bold text-xl xl:text-2xl leading-1.2 tracking-tight text-muted mb-6"
+              >
+                Security
+              </h4>
+              <ul class="flex flex-col gap-3 md:gap-4 leading-1.33">
+                <li><a href="#!">Terms and Conditions</a></li>
+                <li><a href="#!">Privacy Policy</a></li>
+                <li><a href="#!">Responsible Gaming</a></li>
+                <li><a href="#!">Cookies Policy</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="arm -mb-2 lg:-mb-20">
+        <div class="container">
+          <ul class="flex flex-wrap items-center justify-center gap-2 md:gap-3 xl:gap-6 py-9">
+            <li>
+              <a href="#!"
+                ><img
+                  class="w-[104px] md:w-[112px] xl:w-[82px] 2xl:w-[104px]"
+                  src="./images/pay-partners/bank.svg"
+                  alt="bank transfers"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  class="w-[104px] md:w-[112px] xl:w-[82px] 2xl:w-[104px]"
+                  src="./images/pay-partners/visa.svg"
+                  alt="visa"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  class="w-[104px] md:w-[112px] xl:w-[82px] 2xl:w-[104px]"
+                  src="./images/pay-partners/skrill.svg"
+                  alt="skrill"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  class="w-[104px] md:w-[112px] xl:w-[82px] 2xl:w-[104px]"
+                  src="./images/pay-partners/rapida.svg"
+                  alt="rapida"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  class="w-[104px] md:w-[112px] xl:w-[82px] 2xl:w-[104px]"
+                  src="./images/pay-partners/paysafe.svg"
+                  alt="paysafe"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  class="w-[104px] md:w-[112px] xl:w-[82px] 2xl:w-[104px]"
+                  src="./images/pay-partners/pay.svg"
+                  alt="pay"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  class="w-[104px] md:w-[112px] xl:w-[82px] 2xl:w-[104px]"
+                  src="./images/pay-partners/neteller.svg"
+                  alt="neteller"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  class="w-[104px] md:w-[112px] xl:w-[82px] 2xl:w-[104px]"
+                  src="./images/pay-partners/neosurf.svg"
+                  alt="neosurf"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  class="w-[104px] md:w-[112px] xl:w-[82px] 2xl:w-[104px]"
+                  src="./images/pay-partners/mifinity.svg"
+                  alt="mifinity"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  class="w-[104px] md:w-[112px] xl:w-[82px] 2xl:w-[104px]"
+                  src="./images/pay-partners/mastercard.svg"
+                  alt="mastercard"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  class="w-[104px] md:w-[112px] xl:w-[82px] 2xl:w-[104px]"
+                  src="./images/pay-partners/interac.svg"
+                  alt="interac"
+              /></a>
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  class="w-[104px] md:w-[112px] xl:w-[82px] 2xl:w-[104px]"
+                  src="./images/pay-partners/crypto.svg"
+                  alt="crypto"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="arm__img">
+          <img
+            class="max-w-[1500px] w-full mx-auto object-cover h-[150px] md:h-[190px] lg:h-[330px]"
+            src="./images/content/arm.svg"
+            alt="arm and coins"
+          />
+        </div>
+      </div>
+
+      <section class="relative bg-bg-dark text-muted pb-24 z-10">
+        <div class="bg-bg-primary">
+          <div class="container">
+            <div class="bg-bg-primary py-9 max-w-[1510px] w-full mx-auto">
+              <ul
+                class="flex flex-wrap items-center justify-center lg:justify-center gap-2 md:gap-3 xl:gap-6 mb-2 md:mb-6"
+              >
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="w-[104px] md:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/top/bgaming.svg"
+                      alt="bgaming"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="w-[104px] md:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/top/thunderkick.svg"
+                      alt="thunderkick"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="w-[104px] md:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/top/netent.svg"
+                      alt="netent"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="w-[104px] md:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/top/platipus.svg"
+                      alt="platipus"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="w-[104px] md:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/top/relax.svg"
+                      alt="relax gaming"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="w-[104px] md:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/top/felix.svg"
+                      alt="felix gaming"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="hidden lg:block lg:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/top/push.svg"
+                      alt="push gaming"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="hidden lg:block lg:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/top/nolimit.svg"
+                      alt="nolimit city"
+                  /></a>
+                </li>
+              </ul>
+
+              <ul
+                class="flex flex-wrap items-center justify-center lg:justify-center gap-2 md:gap-3 xl:gap-6"
+              >
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="w-[104px] md:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/bottom/quickspin.svg"
+                      alt="quickspin"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="w-[104px] md:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/bottom/felix.svg"
+                      alt="felix gaming"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="w-[104px] md:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/bottom/push.svg"
+                      alt="push gaming"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="w-[104px] md:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/bottom/nolimit.svg"
+                      alt="nolimit city"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="w-[104px] md:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/bottom/pragmatic.svg"
+                      alt="pragmatic play"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img
+                      class="lg:hidden w-[104px] md:w-[112px] xl:w-[135px] 2xl:w-[167px]"
+                      src="./images/providers/top/nolimit.svg"
+                      alt="nolimit city"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="about relative max-h-[550px] overflow-hidden transition ease-in-out duration-300">
+            <div class="bg-bg-dark mb-9 lg:mb-16 2xl:mb-20">
+              <ul
+                class="flex flex-wrap items-center justify-evenly gap-y-3 md:justify-around 2xl:justify-evenly py-6 2xl:py-9"
+              >
+                <li>
+                  <img
+                    class="w-[84px] md:w-[120px]"
+                    src="./images/responsible-gaming-muted/adult.svg"
+                    alt="18+ adult only"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="w-[84px] md:w-[120px]"
+                    src="./images/responsible-gaming-muted/gaming-therapy.svg"
+                    alt="gambling therapy"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="w-[84px] md:w-[120px] ml-3 md:ml-0"
+                    src="./images/responsible-gaming-muted/responsible-gaming.svg"
+                    alt="responsible gaming"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="w-[84px] md:w-[120px]"
+                    src="./images/responsible-gaming-muted/gamcare.svg"
+                    alt="gamcare"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="w-[84px] md:w-[120px]"
+                    src="./images/responsible-gaming-muted/casino.svg"
+                    alt="casino"
+                  />
+                </li>
+              </ul>
+            </div>
+
+            <div class="max-w-[1500px] w-full mx-auto text-sm md:text-base lg:pl-9">
+              <h3
+                class="font-sofia text-2xl xl:text-[32px] text-light-primary leading-1.2 tracking-tight mb-6"
+              >
+                About Service
+              </h3>
+              <h6 class="font-sofia font-extra-bold text-base md:text-xl leading-1.2 text-bg-input mb-6">
+                A whole new galaxy with the most lucrative bonuses has just been discovered, and Service is
+                your gateway to it!
+              </h6>
+              <p class="leading-1.33 mb-6">
+                Dress for the occasion, for it's going to be a journey beyond the skyline. Brace yourself as
+                the space shuttle comes alive and prepare for the most colourful and enlivening view of cool
+                bonuses, all within your reach.
+              </p>
+              <p class="leading-1.33 mb-6">
+                It doesn't matter if this is your maiden voyage to outer space or if you're already an expert.
+                SpinSpirit will give you an unforgettable experience every time you show up. Set up in 2022,
+                this platform is open to everyone and promises to enthral every step of the way!
+              </p>
+              <p class="leading-1.33 mb-10">
+                The SpinSpirit casino is a brilliant merger of two fascinating concepts - the casino and outer
+                space. This is one place where you can be yourself and gamble to your heart's content. Our
+                generous bonuses and promotions are ever available to make your experience more fun than ever
+                before.
+              </p>
+              <h6 class="font-sofia font-extra-bold text-2xl xl:text-[32px] leading-1.2 text-bg-input mb-6">
+                Blazing Fast Payouts
+              </h6>
+              <p class="leading-1.33 mb-10">
+                In our zeal to serve you better, we've provided only secure and super fast payment methods.
+                SpinSpirit Casino is home to dozens of highly efficient payment options that will make your
+                deposits and withdrawals hassle-free.
+              </p>
+              <h6 class="font-sofia font-extra-bold text-2xl xl:text-[32px]leading-1.2 text-bg-input mb-6">
+                Groundbreaking Support
+              </h6>
+              <p class="leading-1.33 mb-10">
+                At SpinSpirit Casino, we always have contingency plans so that our members will never be
+                stranded. Although our service is top-notch, and we don't anticipate any problems, we've put
+                together a team of professionals in case you encounter any challenges. Our friendly ground
+                support is available 24/7 and will always be there when you need them.
+              </p>
+              <h6 class="font-sofia font-extra-bold text-2xl xl:text-[32px] leading-1.2 text-bg-input mb-6">
+                No Time To Waste!
+              </h6>
+              <p class="leading-1.33 mb-10">
+                This ship is powered by bonuses and loyalty programs! Sign up today and feel the force of our
+                jet engines as they propel you to heights of entertainment you never thought possible. What
+                are you waiting for? It's time to feel alive again!
+              </p>
+              <h6 class="font-sofia font-extra-bold text-2xl xl:text-[32px] leading-1.2 text-bg-input mb-6">
+                More Than Casino
+              </h6>
+              <p class="leading-1.33 mb-6">
+                We know that there are people out there who are intrigued by outer space, just like us. This
+                is the foundation on which the SpinSpirit Casino is built. We've combined the astral plane
+                with the most enjoyable casino experience. Now you can literally aim for the stars as you
+                gamble, and our highly rewarding bonuses and promotions will continue to give you the boosts
+                you need.
+              </p>
+            </div>
+          </div>
+
+          <button class="show-more-btn block mx-auto relative z-20">
+            <img src="./images/icons/show-more.svg" alt="show more" />
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>
